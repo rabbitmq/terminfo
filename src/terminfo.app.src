@@ -1,0 +1,29 @@
+%% vim:ft=erlang:
+
+{application, terminfo,
+ [{description, "Helpers to query a terminal's capatilities"},
+  {vsn, "0.1.0"},
+  {registered, []},
+  {applications,
+   [kernel,
+    stdlib
+   ]},
+  {env,[]},
+  {modules, []},
+
+  %% Hex.pm package informations.
+  {licenses, ["Apache 2.0", "MPL 2.0"]},
+  {links, [
+           {"GitHub", "https://github.com/rabbitmq/terminfo"}
+          ]},
+  {build_tools, ["mix", "rebar3"]},
+  {files, ["c_src",
+           "include",
+           "LICENSE*",
+           "mix.exs",
+           "README.md",
+           "rebar.config.script",
+           "rebar.config",
+           "rebar.lock",
+           "src"]}
+ ]}.
